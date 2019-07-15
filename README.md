@@ -3,7 +3,7 @@ Download a page on a manga chapter
 
 # Installation
 Install TamperMonkey
-Go to Settings -> Utilities -> Paste the URL below and Import
+Go to the Dashboard -> Utilities -> Paste the URL below in URL and press Import
 https://raw.githubusercontent.com/EternalBiscuit/nico-seiga-page-download/master/nico-seiga-manga-page-download
 
 # Usage
