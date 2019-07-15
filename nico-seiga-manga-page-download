@@ -1,0 +1,23 @@
+// ==UserScript==
+// @name         Nico Nico Seiga Manga Page Download
+// @namespace    https://github.com/EternalBiscuit/nico-seiga-page-download/
+// @version      0.1
+// @description  Getting a manga page in nico nico seiga, click once on a page
+// @author       EternalBiscuit
+// @match        http://seiga.nicovideo.jp/watch/*
+// @grant        none
+// @require      https://code.jquery.com/jquery-3.2.1.min.js
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    setInterval(function(){
+    $("#page_contents li>.note canvas").not(".balloon").each(function(i){
+        let pageData = $(this)[0].toDataURL();
+        let pageName = $(this).parent().parent().attr("data-page-index");
+        pageName = pageName.padStart(3, '0');
+        $(this).parent().wrap("<a class='download' href='" + pageData + "' download='" + pageName + "' download></a>");
+    })}, 300);
+})();
+
+
