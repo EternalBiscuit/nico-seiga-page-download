@@ -1,5 +1,5 @@
 # nico-seiga-page-download
-Download a page on a manga chapter
+Download a page on a manga chapter in Nico Nico Seiga.
 
 # Installation
 Install TamperMonkey
