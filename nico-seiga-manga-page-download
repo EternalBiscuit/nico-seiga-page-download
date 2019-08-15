@@ -17,7 +17,7 @@
         let pageName = $(this).parent().parent().attr("data-page-index");
         pageName = pageName.padStart(3, '0');
         $(this).parent().wrap("<a class='download' href='" + pageData + "' download='" + pageName + "' download></a>");
-    })}, 300);
+    })}, 2000);
 })();
 
 
